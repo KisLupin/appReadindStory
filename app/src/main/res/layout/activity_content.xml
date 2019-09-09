@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/box_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/box" />
+
+        <ImageView
+            android:id="@+id/before_button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"
+            android:scaleX="4"
+            android:scaleY="4"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/name_story"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/before_button2"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="NAME"
+            android:textSize="24sp"
+            android:layout_height="wrap_content" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/box_content"
+            android:padding="8dp"
+            android:layout_height="wrap_content">
+
+            <org.sufficientlysecure.htmltextview.HtmlTextView
+                android:id="@+id/content_story"
+                android:layout_width="match_parent"
+                android:textSize="24sp"
+                android:text="asdafasfagasg"
+                android:layout_height="wrap_content" />
+
+        </ScrollView>
+
+    </RelativeLayout>
+</layout>
